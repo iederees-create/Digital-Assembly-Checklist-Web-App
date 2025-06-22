@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assembly Checklist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <div class="container">
+    <h1>Digital Assembly Checklist</h1>
+
+    <section id="login-section">
+      <h2>Login</h2>
+      <select id="user-select">
+        <option value="assembler">Assembler - John</option>
+        <option value="qa_lead">QA Lead - Sarah</option>
+      </select>
+      <button onclick="login()">Login</button>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <h2>Welcome, <span id="user-name"></span></h2>
+      <div id="task-list"></div>
+    </section>
+
+    <section id="checklist" class="hidden">
+      <h2>Checklist: <span id="serial-number"></span></h2>
+      <ul id="step-list"></ul>
+      <button onclick="submitTask()">Submit Task</button>
+      <button onclick="goBack()">Back</button>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
